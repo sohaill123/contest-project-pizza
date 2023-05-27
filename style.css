@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+   }
+   
+   .navigation
+   {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       background-color: black;
+       color: white; 
+       padding: 1rem;
+       align-items: center;
+       position: sticky;
+       top:0;
+       z-index: 1000;
+   }
+   .link{
+       width: 70%;
+       display: flex;
+       justify-content: space-evenly;
+   }
+   .left{
+       width: 20%;
+   }
+   .right{
+       width: 10%;
+       display: flex;
+       justify-content: space-between;
+   }
+   .navigation .link a{
+       text-decoration: none;
+       color: white;
+       font-weight: 700;
+       text-transform: uppercase;
+   }
+   
+   .background{
+       height: 100vh;
+       width: 100%;
+       background: url(./images/piza1.jpg);
+       background-position: center;
+       background-size: cover;
+       color:white;
+       
+       
+   }
+   .description{
+       z-index: 10000000;
+   }
+   .description p{
+       float:left
+   }
+   .pizzarecipe{
+       display: flex;
+       flex-direction: row;
+       height: 100vh
+   
+   }
+   
+   .pizzarecipetext{
+       background-color: black;
+       color: white;
+   }
+   .pizzarecipetext h1{
+       color:white;
+       text-transform: uppercase;
+       text-decoration: underline red;
+       text-align: center;
+   }
+   .pizzarecipeimg img{
+       height: 100px;
+       width: 100px;
+   }
+   .row
+   {   background-color: yellow;
+       display: grid;
+       grid-template-columns: 1fr 1fr ;
+   }
+   .background::before {
+       content: ""; 
+       position: absolute;
+       top: 0;
+       padding-bottom: 3.5rem;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background:black;
+       opacity: .4;
+       z-index: 1;
+   }
+   .description{
+    padding: 2rem;
+   
+   }
+   .description h1{
+       color: white;
+       font-size: 5rem;
+       width: 50%;
+       padding-left: 5%;
+   }
+   .description>p{
+       width: 40%;
+       padding-left: 5%;
+       padding-top: 5%;
+       font-family: Ruda;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        height: 378px;
+        
+
+
+   }
+   .pizzaimage{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+      
+       width: 100%;
+   }
+   .pizzaimage p{
+       width: 50%;
+       text-align: center;
+   }
+   .imagegrid{
+       display:grid;
+       grid-template-columns: 1fr 1fr;
+       width: 80vw;
+       margin: 0 auto;
+       row-gap: 1rem;
+       column-gap: 0.0rem;
+       padding: 3rem;
+       
+       
+       
+   
+   }
+   #close{
+       display: none;
+   }
+   .imagegrid .pizzaimage p{
+       text-align: left;
+       width: 70%;
+       line-height: 160%;
+       letter-spacing: 0.05em;
+      
+       
+   }
+   .about{
+       background: black;
+   }
+   
+   .about h1{
+       color:white;
+       text-align: center;
+       text-transform: uppercase;
+       text-decoration: underline red;
+       font-family: Quattrocento;
+font-size: 60px;
+font-weight: 400;
+letter-spacing: 0em;
+padding-right: 20%;
+padding-left: 15%;
+padding-top: 5%;
+padding-bottom: 5%;
+
+
+      
+   }
+   .main{
+       background: black;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       padding-left: 10%;
+      
+       
+      
+       
+   }
+   .imagegrid img{
+       height: 22vh;
+       width: 15vw;
+       margin-right: 1rem;
+   }
+   .main h1{
+       color:white;
+       text-transform: uppercase;
+       text-align: center;
+       text-decoration: underline red;
+   }
+   .main p{
+       color:white;
+       text-align: center;
+       
+   }
+   .about{
+       padding: 2rem;
+   }
+   .descriptionaboutus{
+       padding: 2rem;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       column-gap: 2rem;
+       margin: 0 auto;
+       margin-left: 10%;
+       
+
+
+height: 420px;
+left: 193px;
+top: 1421px;
+
+font-family: 'Ruda';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+
+
+letter-spacing: 0.09em;
+
+
+   }
+   .descriptionaboutus p{
+       color:white;
+       text-align: justify;
+       
+   }
+   .findus{
+       background: black;
+       height: 100vh;
+       margin-bottom: 100px;
+       
+   }
+   
+   .text{color: white;
+   }
+   .text h1{
+       text-transform: uppercase;
+       text-align: center;
+       text-decoration: underline red;
+   }
+   .map p{
+   color:white;
+   text-align: justify;
+   width: 80%;
+padding-left: 10%;
+font-family: 'Ruda';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+   }
+   
+   .map{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       column-gap: 5rem;
+       width: 80%;
+       margin: 0 auto;
+       color:white;
+       
+       
+       
+   }
+   iframe{
+       height: 100%;
+   width: 100%;}
+   .copywrite{
+       display: flex;
+       width: 80%;
+       justify-content: space-between;
+       flex-direction: row;
+       color:white;
+       margin: 0 auto;
+   }
+   .bottom{
+       height: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+   }
+   @media only screen and (max-width: 900px) {
+       *{
+           margin: 0;
+           padding: 0;
+       }
+       .navigation{
+           display: flex;
+           flex-direction: column;
+           width: 100vw;
+           height: 100vh;
+         
+           
+       }
+       .descriptionaboutus{
+           padding: 2rem;
+           display: grid;
+           grid-template-columns: 1fr ;
+           column-gap: 2rem;
+           margin: 0 auto;
+       }
+       .left{
+           display: flex;
+           width: 100%;
+           height: 30%;
+       }
+       .link{
+           display: flex;
+           flex-direction: column;
+           justify-content: space-around;
+           height: 100%;
+           margin:  0 auto;
+           
+   
+       }
+       #close{
+           display: block;
+       }
+       .right{
+           display: none;
+       }
+       .link a{
+           margin:  auto;
+       }
+       .description h1{
+      font-size: 200%;
+       }
+       .description p{
+           width: 100%;
+       }
+       .imagegrid {
+           display: grid;
+           grid-template-columns: 1fr;
+       }
+       .pizzaimage{
+           display: flex;
+           flex-direction: column;
+       }
+       .pizzaimage p{
+           width: 80vw;
+       }
+       .copywrite{
+           display: flex;
+           width: 80%;
+           justify-content: space-between;
+           flex-direction: column;
+           color:white;
+           margin: 0 auto;
+       }
+       .findus{
+           background: black;
+           height: 100vh;
+           
+       }
+       .bottom{
+           height: 100%;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-around;
+       }
+       .map{
+           display: grid;
+           grid-template-columns: 1fr ;
+           column-gap: 5rem;
+           width: 80%;
+           margin: 0 auto;
+           
+       }
+       
+       .pizzaimage p{
+           width: 100%;
+           text-align: center;
+       }
+       .pizzaimage img{
+           width: 100%;
+           height: 100%;
+           text-align: center;
+       }
+       iframe{
+       height: 150%;
+       width: 100%;}
+       .copywrite{
+           margin: 0 auto;
+           width: 50%;
+           padding: 1rem;
+           display: flex;
+           align-items: center;
+       }
+
+       .maincontainermobile{
+           position: absolute;
+       }
+
+       
+
+       
+     }
